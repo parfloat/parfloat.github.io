@@ -169,19 +169,16 @@ DALL·E 2024-12-10 17.30.58 - A cartoon-style image of many GPU chips working in
 				the disassembly results as a "kit of parts". </b>
 
 
-			  <br><br>			  
+			  <br><br>
 
+			  <strong>
+              What bugs shall we understand to locate and mitigate?
 			  So what systems will we tear down?       See  <a href="#resources">Resources</a>
+			  </strong>
 
-	What bugs shall we understand to locate and mitigate?
-			  <br>
+	
+			  <br><br>
 
-
-			  <ul>
-  <li> Rounding errors. </li>
- <li> Floating-point NaNs. </li>
- <li> Data races. </li>
-</ul>
 			  
 
 			  			  <strong> I may need to cap this class and choose 
@@ -430,9 +427,15 @@ DALL·E 2024-12-10 17.30.58 - A cartoon-style image of many GPU chips working in
             <h2>Resources</h2>
             <p>
 
-			  Here are a few examples:
-			  <br>
+			  Here are a few examples of bugs likely to arise <strong> (these "nails" will seek the right hammers!) </strong>
+ <ul>
+  <li> Rounding errors. </li>
+ <li> Floating-point NaNs. </li>
+ <li> Data races. </li>
+</ul>
+ <br>
 
+	<strong>	  Here are a few examples of where the bugs are likely to arise: </strong>
 			  <ul>
   <li> The autograd function of some simple neural networks, including baby LLMs (expert-written).</li>
   <li> Various inner layers of neural networks (designed by stalwarts such as Karpathy).</li>
