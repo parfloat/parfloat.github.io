@@ -304,6 +304,16 @@ DALL·E 2024-12-10 17.30.58 - A cartoon-style image of many GPU chips working in
             <p>
 			  The class meets Tue and Thu from 2pm to 3:20pm in WEB 1230.
 			  Here is a more specific schedule.
+
+			  <!-- 1)  1/14: Tomorrow, I'll present FP and precision.
+2)  1/16: On Thu, I'll present FP error estimation using symbolic AD (work in the Satire tool) - another reinforcement of AD. 
+3) 1/21:  Next week Tue, I'll present GPUs and parallelism. I plan to read the layer code of some GPU implementations of layers. I went thru a few with Mark. They used cool warp-level primitives. We can use GPU layers as the selection criterion for the GPU concepts to imbibe and teach.
+4) 1/23:  Next week Thu I plan to begin my GPT lecture 
+5) 1/28: We can do an Einsum lecture. We can show Attention (or others) coded using Einsum
+6) 1/30: Mark/Harvey : I feel we can write Tensor-core mat-mat using Einsum. It will be cool to try and do so.
+That finishes Jan!
+7) Debugging tools will come in Feb. -->
+			  
 <table border="1">
   <thead>
     <tr>
@@ -338,38 +348,39 @@ DALL·E 2024-12-10 17.30.58 - A cartoon-style image of many GPU chips working in
     </tr>
     <tr>
       <td>1/14</td>
-      <td>Present details of baby GPT</td>
+      <td> General lecture on Floating-Point Arithmetic: Precision, Error, Exceptions, Tools.</td>
     </tr>
     <tr>
       <td>1/16</td>
-      <td>Homework-1 on understanding the baby GPT</td>
+      <td>
+		FP Error Estimation using Symbolic AD (Satire tool); FP Exception Detection
+		using Binary Analysis (GPU-FPX Tool).
+	  </td>
     </tr>
     <tr>
       <th colspan="2">Week 3</th>
     </tr>
     <tr>
       <td>1/21</td>
-      <td>Correctness tools for GPU: floating-point
-		and concurrency (there will be
-		online recordings kept before class).</td>
+      <td> GPUs and Parallelism through the Lens of NN Layers (what CUDA and what FP do they use?) A Homework is called for.</td>
     </tr>
     <tr>
       <td>1/23</td>
-      <td> Present other example codes
-		such as lossy compressors and
-		irregular algorithms (recordings to
-		be kept online before class). </td>
+      <td> Begin lecturing on GPTs. What are their architectural elements? System elements? </td>
     </tr>
     <tr>
       <th colspan="2">Week 4</th>
     </tr>	
     <tr>
       <td>1/28</td>
-      <td>Student presentations (at least 4)</td>
+      <td> Awesome Einsums: The Einstein Summation Notation: How it condenses many concepts clearly; can it
+		also help write down Tensor-Core Mat-Mat?
+		</td>
     </tr>
     <tr>
       <td>1/30</td>
-      <td>Student presentations (at least 4)</td>
+      <td> More GPTs. A Homework is called for.
+		</td>
     </tr>
     <tr>
       <th colspan="2">Week 5</th>
