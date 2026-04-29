@@ -21,6 +21,7 @@
 
   <nav class="topnav">
     <a href="#overview">Overview</a>
+    <a href="#timetable">Timetable</a>
     <a href="#syllabus">Syllabus Snapshot</a>
     <a href="#projects">Projects</a>
     <a href="#resources">Resources</a>
@@ -61,6 +62,254 @@
         <img src="main-img.webp" alt="Illustration of parallel GPU arithmetic">
         <figcaption>GPU correctness and performance are treated together, not as separate concerns.</figcaption>
       </figure>
+    </section>
+
+    <section id="timetable" class="panel alt">
+      <h2>Timetable</h2>
+      <p>
+        This table is a structured version of the timetable embedded in the
+        shared syllabus document. It preserves the semester flow while keeping
+        the public website readable.
+      </p>
+      <div class="table-wrap">
+        <table class="schedule-table">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Lead</th>
+              <th>Topics</th>
+              <th>Readings / Slides</th>
+              <th>Assignments / Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Mon 1/5</td>
+              <td>Both</td>
+              <td>Course organization</td>
+              <td>Introductory syllabus and opening slides</td>
+              <td>Semester launch</td>
+            </tr>
+            <tr>
+              <td>Wed 1/7</td>
+              <td>Both</td>
+              <td>Number systems and tools; intro to performance fundamentals</td>
+              <td>Ganesh slides; Sree performance slides</td>
+              <td>Asg1 released, due 1/14</td>
+            </tr>
+            <tr>
+              <td>Mon 1/12</td>
+              <td>Sree</td>
+              <td>Intro to GPU performance</td>
+              <td>GPU performance lecture material</td>
+              <td>Continue Asg1</td>
+            </tr>
+            <tr>
+              <td>Wed 1/14</td>
+              <td>Both + student presenters</td>
+              <td>Formal model of GPU execution; throughput models</td>
+              <td>Facile, uiCA, race-effect discussion, GKLEE demo</td>
+              <td>Asg2 assigned, due 1/21</td>
+            </tr>
+            <tr>
+              <td>Mon 1/19</td>
+              <td>Holiday</td>
+              <td>MLK Day</td>
+              <td>No class</td>
+              <td>University holiday</td>
+            </tr>
+            <tr>
+              <td>Tue 1/20</td>
+              <td>Guest talk</td>
+              <td>Interactive computing in nature recreation and youth sports</td>
+              <td>Prof. Michael Jones, BYU</td>
+              <td>Special lecture</td>
+            </tr>
+            <tr>
+              <td>Wed 1/21</td>
+              <td>Guest talk</td>
+              <td>Modular static cost analysis and related verification ideas</td>
+              <td>Tiago Cogumbreiro / Faial material</td>
+              <td>Asg3 assigned, due 1/28</td>
+            </tr>
+            <tr>
+              <td>Thu 1/22</td>
+              <td>Guest talk</td>
+              <td>50 years of parallel programming</td>
+              <td>Prof. Keshav Pingali</td>
+              <td>Kahlert Distinguished Lecture</td>
+            </tr>
+            <tr>
+              <td>Mon 1/26</td>
+              <td>Ganesh + David</td>
+              <td>AWS training; Tilus; modular scheduling</td>
+              <td>Tilus paper and course repo experiments</td>
+              <td>AWS and low-precision kernel focus</td>
+            </tr>
+            <tr>
+              <td>Wed 1/28</td>
+              <td>Ganesh</td>
+              <td>AWS training; Neuron architecture; Mojo</td>
+              <td>Neuron slides and AWS instructions</td>
+              <td>Asg4 due 2/6; Asg5 due 2/13</td>
+            </tr>
+            <tr>
+              <td>Mon 2/2</td>
+              <td>Ganesh + Sree + students</td>
+              <td>AWS tensor-addition walkthrough; profiling; student talks</td>
+              <td>Mojo in HPC; RenderMan XPU</td>
+              <td>Interactive experimental session</td>
+            </tr>
+            <tr>
+              <td>Wed 2/4</td>
+              <td>Both + student speakers</td>
+              <td>Follow-on AWS material; student presentations</td>
+              <td>tritonBLAS; ParallelKittens</td>
+              <td>Project-selection writeup due 2/13</td>
+            </tr>
+            <tr>
+              <td>Mon 2/9</td>
+              <td>Both + student speaker</td>
+              <td>Discussion of Asg1-Asg4; Hoare logic for GPU programs</td>
+              <td>Hoare logic reading; HiRace material</td>
+              <td>Homework review</td>
+            </tr>
+            <tr>
+              <td>Wed 2/11</td>
+              <td>Both + student speaker</td>
+              <td>Memory hierarchy paper discussion</td>
+              <td>Dissecting the NVIDIA Turing T4 GPU via Microbenchmarking</td>
+              <td>Read before class</td>
+            </tr>
+            <tr>
+              <td>Mon 2/16</td>
+              <td>Holiday</td>
+              <td>Presidents Day</td>
+              <td>No class</td>
+              <td>University holiday</td>
+            </tr>
+            <tr>
+              <td>Wed 2/18</td>
+              <td>Both + student speakers</td>
+              <td>ThunderKittens, HipKittens, TVM-FFI discussion</td>
+              <td>OpenReview paper; HipKittens; TVM-FFI</td>
+              <td>Paper-discussion format</td>
+            </tr>
+            <tr>
+              <td>Mon 2/23</td>
+              <td>Ganesh + student speakers</td>
+              <td>MLIR-AIR paper and software tryout</td>
+              <td>MLIR paper; MLIR-AIR; AIR2CUDA; Alex Zinenko talk</td>
+              <td>Unit-test and software exploration</td>
+            </tr>
+            <tr>
+              <td>Wed 2/25</td>
+              <td>Guest lecture</td>
+              <td>Visit by Dr. Sangeeta Chowdhary on MLIR-AIR</td>
+              <td>AMD / MLIR-AIR effort</td>
+              <td>Asg6 due 3/6; final project proposal expected</td>
+            </tr>
+            <tr>
+              <td>Mon 3/2</td>
+              <td>Ganesh + students</td>
+              <td>Faial race-checking and GKLEE</td>
+              <td>Faial FMSD paper; GKLEE paper; NVBit basics</td>
+              <td>Project-idea discussion</td>
+            </tr>
+            <tr>
+              <td>Wed 3/4</td>
+              <td>Students</td>
+              <td>Brief project idea presentations</td>
+              <td>Correctness tooling slide deck; Goldberg FP reading</td>
+              <td>Project pitching</td>
+            </tr>
+            <tr>
+              <td>Mon 3/9</td>
+              <td>Holiday</td>
+              <td>Spring break</td>
+              <td>No class</td>
+              <td>University holiday</td>
+            </tr>
+            <tr>
+              <td>Wed 3/11</td>
+              <td>Holiday</td>
+              <td>Spring break</td>
+              <td>No class</td>
+              <td>University holiday</td>
+            </tr>
+            <tr>
+              <td>Mon 3/16</td>
+              <td>Project mode</td>
+              <td>Project discussions</td>
+              <td>Project-specific slides and brainstorming</td>
+              <td>Loose post-break schedule begins</td>
+            </tr>
+            <tr>
+              <td>Wed 3/18</td>
+              <td>Project mode</td>
+              <td>Project discussions</td>
+              <td>Team meetings and review</td>
+              <td>Project focus</td>
+            </tr>
+            <tr>
+              <td>Mon 3/23</td>
+              <td>Guest / project mode</td>
+              <td>SLEEK paper and code discussion</td>
+              <td>SLEEK IPDPS 2026 paper and repository</td>
+              <td>Andrew Rodriguez presentation</td>
+            </tr>
+            <tr>
+              <td>Wed 3/25</td>
+              <td>Project mode</td>
+              <td>Project meetings; brief look at Hexagon MLIR</td>
+              <td>Qualcomm slides and related arXiv material</td>
+              <td>Project focus</td>
+            </tr>
+            <tr>
+              <td>Mon 3/30</td>
+              <td>Project mode</td>
+              <td>Project meetings</td>
+              <td>Team progress and debugging</td>
+              <td>Project focus</td>
+            </tr>
+            <tr>
+              <td>Wed 4/1</td>
+              <td>Discussion</td>
+              <td>cuFuzz discussion</td>
+              <td>NVIDIA research link and slides</td>
+              <td>Tooling / bug-finding focus</td>
+            </tr>
+            <tr>
+              <td>Mon 4/6</td>
+              <td>Discussion</td>
+              <td>MLIR transform dialect and xDSL</td>
+              <td>Course-generated transformations, scripts, and slides</td>
+              <td>Compiler transformation focus</td>
+            </tr>
+            <tr>
+              <td>Mon 4/20</td>
+              <td>All groups</td>
+              <td>Last lecture; short project presentations</td>
+              <td>In-class final project updates</td>
+              <td>All groups present briefly</td>
+            </tr>
+            <tr>
+              <td>Mon 4/27</td>
+              <td>Due date</td>
+              <td>Project reports due</td>
+              <td>Final report submission</td>
+              <td>Written deliverable deadline</td>
+            </tr>
+            <tr>
+              <td>Mon 5/4</td>
+              <td>Administrative</td>
+              <td>Grades due</td>
+              <td>End of semester</td>
+              <td>Course closeout</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </section>
 
     <section id="syllabus" class="panel alt">
