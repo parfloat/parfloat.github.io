@@ -75,6 +75,10 @@ a:hover {
     font-weight: 600;
 }
 
+.topnav a.nav-accent {
+    color: #ff8fc8;
+}
+
 main {
     max-width: 1120px;
     margin: 0 auto;
