@@ -92,6 +92,41 @@ main {
     color: #18222d;
 }
 
+.toc-grid,
+.catalog-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.2rem;
+    margin: 1.2rem 0 1.6rem;
+}
+
+.toc-card,
+.catalog-card {
+    padding: 1rem 1.1rem;
+    background: #fffdf8;
+    border-left: 4px solid #6f1d1b;
+    box-shadow: 0 10px 20px rgba(24, 34, 45, 0.05);
+}
+
+.toc-card h3,
+.catalog-card h3 {
+    margin-top: 0;
+    margin-bottom: 0.6rem;
+    color: #6f1d1b;
+}
+
+.toc-card ol,
+.toc-card ul,
+.catalog-card ul {
+    margin: 0;
+    padding-left: 1.2rem;
+}
+
+.catalog-card li,
+.toc-card li {
+    margin-bottom: 0.55rem;
+}
+
 .media {
     margin: 0;
 }
@@ -135,6 +170,8 @@ footer p {
         grid-template-columns: 1fr;
     }
 
+    .toc-grid,
+    .catalog-grid,
     .dual {
         grid-template-columns: 1fr;
     }

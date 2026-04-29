@@ -49,7 +49,7 @@
           design.
         </p>
         <p>
-          The class is co-taught with <strong>Professor Sripathi Pai of the University of Rochester</strong>.
+          The class is co-taught with <strong>Professor Sreepathi Pai of the University of Rochester</strong>.
           It is explicitly project-centered: student-designed primitives will be
           tested in realistic ML and HPC settings, and the course is intended to
           support paper writing and public artifact release when the work matures
@@ -64,6 +64,32 @@
 
     <section id="syllabus" class="panel alt">
       <h2>Syllabus Snapshot</h2>
+      <div class="toc-grid">
+        <div class="toc-card">
+          <h3>Table of Contents</h3>
+          <ol>
+            <li>Course organization and project expectations</li>
+            <li>Number systems, floating-point, and tool foundations</li>
+            <li>GPU performance fundamentals and throughput modeling</li>
+            <li>Formal GPU execution models, races, and schedule-sensitive bugs</li>
+            <li>AWS Trainium and Neuron/NKI experimentation</li>
+            <li>Compiler and language systems: Tilus, Mojo, MLIR, MLIR-AIR</li>
+            <li>Profiling, tracing, and performance-measurement workflows</li>
+            <li>Verification, race-checking, and floating-point analysis</li>
+            <li>Student paper presentations and visiting research talks</li>
+            <li>Semester-long project development and artifact release</li>
+          </ol>
+        </div>
+        <div class="toc-card">
+          <h3>Semester Shape</h3>
+          <ul>
+            <li>Early weeks emphasize abstractions: numeric representation, correctness reasoning, and cost models.</li>
+            <li>Middle weeks shift into concrete GPU and Trainium experimentation, with profiling and tool use.</li>
+            <li>Later weeks increasingly revolve around paper discussion, project reviews, and system-building.</li>
+            <li>Short student presentations are threaded throughout to connect reading with active experimentation.</li>
+          </ul>
+        </div>
+      </div>
       <p>
         The detailed course document lays out a semester that moves from basic
         numerical and performance foundations toward concrete GPU experiments on
@@ -130,6 +156,44 @@
         archived course materials and the semester documents in the repository.
         This homepage is meant to provide the compact public-facing summary.
       </p>
+      <div class="catalog-grid">
+        <article class="catalog-card">
+          <h3>Software Tools</h3>
+          <p>
+            The shared course document points students toward a hands-on stack
+            of systems for writing, checking, and profiling GPU primitives.
+          </p>
+          <ul>
+            <li><strong>AWS Trainium + Neuron/NKI</strong>: the main accelerator experimentation path in the syllabus, including NKI kernels, Neuron Explorer, profiling traces, and attention and matrix-multiplication tutorials.</li>
+            <li><strong>CHPC GPU workflow</strong>: CUDA-capable campus systems, `nvcc`, `nvidia-smi`, `nsys`, and batch allocation workflows for NVIDIA profiling.</li>
+            <li><strong>Faial</strong>: a race and cost-analysis direction used in the course to reason about warp-level behavior and correctness/performance interactions.</li>
+            <li><strong>GKLEE</strong>: symbolic and concolic GPU bug-finding, used as a reference point for race exposure and schedule-sensitive failures.</li>
+            <li><strong>Tilus</strong>: a tile-level GPGPU language for low-precision computation, treated as a language-design case study for structured primitive construction.</li>
+            <li><strong>Mojo</strong>: discussed as an emerging systems language for high-performance kernel and HPC-oriented experimentation.</li>
+            <li><strong>MLIR and MLIR-AIR</strong>: compiler infrastructure and accelerator-lowering frameworks used to connect loop nests, transformations, and hardware realization.</li>
+            <li><strong>AIR2CUDA and related tooling</strong>: software artifacts used to inspect lowering pathways from MLIR-AIR-style flows toward GPU code generation.</li>
+            <li><strong>NVBit and custom instrumentation</strong>: dynamic GPU instrumentation ideas, including barrier-focused tooling and low-level runtime inspection.</li>
+            <li><strong>Vercors, CIVL, and FP analysis tools</strong>: formal and numeric-analysis tools for proving race freedom, checking semantics, and studying floating-point error.</li>
+          </ul>
+        </article>
+        <article class="catalog-card">
+          <h3>Papers by Topic</h3>
+          <p>
+            The readings in the shared syllabus cluster naturally into a few
+            recurring themes.
+          </p>
+          <ul>
+            <li><strong>Performance and throughput modeling</strong>: papers such as <em>uiCA</em>, <em>Facile</em>, the shared-memory atomic bottleneck work, and modular static cost analysis build the vocabulary for predicting and explaining kernel throughput.</li>
+            <li><strong>GPU execution cost and productivity</strong>: works such as NPBench, data-centric Python, and CUDA cost-model papers connect user productivity, performance portability, and evaluation-cost reasoning.</li>
+            <li><strong>Race detection and GPU verification</strong>: the syllabus groups FastTrack, FSE 2010 SMT-based GPU verification, GKLEE, GPUVerify, HiRace, Memory Access Protocols, and Vercors as complementary approaches to proving or detecting correctness properties.</li>
+            <li><strong>Formal semantics and Hoare-style reasoning</strong>: materials such as Hoare logic for GPU programs, memory-model readings, and CIVL point students toward specification-first reasoning instead of purely empirical debugging.</li>
+            <li><strong>Floating-point rigor</strong>: the background includes Goldberg’s classic essay, floating-point error-analysis work, Herbie-style rewriting, and scalable rigorous FP analysis, tying numerical semantics directly to kernel trustworthiness.</li>
+            <li><strong>Scheduling, mapping, and specialization</strong>: software pipelining, warp specialization, distributed tensor mapping, and distributed Fourier mapping papers capture the scheduling side of making kernels and tensor systems fast.</li>
+            <li><strong>Compiler and accelerator design</strong>: MLIR, MLIR-AIR, Tilus, and recent accelerator-lowering work show how modern compiler structures can encode performance intent and hardware structure more systematically.</li>
+            <li><strong>Project-facing frontier systems</strong>: RenderMan XPU, tritonBLAS, ParallelKittens, ProofWright, GEAK, TileGym, and Tensor Core survey material serve as examples of current systems that students can study, reimplement, or benchmark against.</li>
+          </ul>
+        </article>
+      </div>
     </section>
   </main>
 
