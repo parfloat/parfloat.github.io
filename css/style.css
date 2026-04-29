@@ -38,8 +38,10 @@ a:hover {
 .hero h1 {
     margin: 0;
     max-width: none;
-    font-size: clamp(1.4rem, 2.7vw, 2.6rem);
+    font-size: clamp(1.1rem, 2.15vw, 2rem);
     line-height: 0.98;
+    color: #f3d34a;
+    white-space: nowrap;
 }
 
 .lede {
