@@ -110,6 +110,7 @@ main {
     border: 1px solid rgba(24, 34, 45, 0.12);
     vertical-align: top;
     text-align: left;
+    font-size: 0.97rem;
 }
 
 .schedule-table th {
@@ -120,6 +121,20 @@ main {
 
 .schedule-table tbody tr:nth-child(even) {
     background: rgba(245, 241, 232, 0.7);
+}
+
+.schedule-table td:first-child {
+    white-space: nowrap;
+    font-weight: 700;
+}
+
+.cell-list {
+    margin: 0;
+    padding-left: 1.1rem;
+}
+
+.cell-list li {
+    margin-bottom: 0.32rem;
 }
 
 .toc-grid,
