@@ -1,23 +1,141 @@
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
-    line-height: 1.6;
+    font-family: Georgia, "Times New Roman", serif;
+    color: #18222d;
+    background: #f5f1e8;
+    line-height: 1.7;
 }
 
-header {
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
+a {
+    color: #6f1d1b;
 }
 
-header a {
-    color: #fff;
+a:hover {
+    color: #9c2f2a;
+}
+
+.hero {
+    background:
+        linear-gradient(135deg, rgba(20, 33, 61, 0.92), rgba(122, 52, 32, 0.86)),
+        url("../main-img.webp") center/cover no-repeat;
+    color: #fff7eb;
+    padding: 4.5rem 1.5rem 4rem;
+}
+
+.hero-inner {
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.eyebrow {
+    margin: 0 0 0.8rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    font-size: 0.82rem;
+    color: #f0d9b6;
+}
+
+.hero h1 {
+    margin: 0;
+    max-width: 12ch;
+    font-size: clamp(2.4rem, 5vw, 4.8rem);
+    line-height: 0.98;
+}
+
+.lede {
+    max-width: 42rem;
+    margin-top: 1.2rem;
+    font-size: 1.22rem;
+}
+
+.topnav {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0.9rem 1.2rem;
+    background: #18222d;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.topnav a {
+    color: #f8efe1;
     text-decoration: none;
-    margin: 0 15px;
+    font-weight: 600;
 }
 
 main {
-    padding: 20px;
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 2rem 1.2rem 4rem;
+}
+
+.panel {
+    display: grid;
+    grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.9fr);
+    gap: 2rem;
+    align-items: start;
+    margin: 1.5rem 0;
+    padding: 1.6rem;
+    background: rgba(255, 251, 243, 0.9);
+    border: 1px solid rgba(24, 34, 45, 0.08);
+    box-shadow: 0 16px 32px rgba(24, 34, 45, 0.08);
+}
+
+.panel.alt {
+    display: block;
+}
+
+.panel h2 {
+    margin-top: 0;
+    font-size: 1.85rem;
+    color: #18222d;
+}
+
+.media {
+    margin: 0;
+}
+
+.media img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid rgba(24, 34, 45, 0.1);
+}
+
+.media figcaption {
+    margin-top: 0.75rem;
+    font-size: 0.92rem;
+    color: #4a535c;
+}
+
+.dual {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.8rem;
+}
+
+.dual figcaption {
+    grid-column: 1 / -1;
+}
+
+footer {
+    padding: 1.6rem;
+    text-align: center;
+    background: #18222d;
+    color: #f5f1e8;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 860px) {
+    .panel {
+        grid-template-columns: 1fr;
+    }
+
+    .dual {
+        grid-template-columns: 1fr;
+    }
 }
