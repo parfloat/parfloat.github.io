@@ -123,9 +123,15 @@ main {
     background: rgba(245, 241, 232, 0.7);
 }
 
+.schedule-table tbody tr + tr td {
+    border-top: 3px solid #b85f4d;
+}
+
 .schedule-table td:first-child {
     white-space: nowrap;
     font-weight: 700;
+    color: #6f1d1b;
+    min-width: 7.5rem;
 }
 
 .cell-list {
