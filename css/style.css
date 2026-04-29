@@ -40,7 +40,7 @@ a:hover {
     max-width: none;
     font-size: clamp(1.1rem, 2.15vw, 2rem);
     line-height: 0.98;
-    color: #f3d34a;
+    color: #f3d34a !important;
     white-space: nowrap;
 }
 
@@ -75,8 +75,11 @@ a:hover {
     font-weight: 600;
 }
 
-.topnav a.nav-accent {
-    color: #ff8fc8;
+.topnav a.nav-accent,
+.topnav a.nav-accent:visited,
+.topnav a.nav-accent:hover,
+.topnav a.nav-accent:active {
+    color: #ff8fc8 !important;
 }
 
 main {
